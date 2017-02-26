@@ -2,6 +2,9 @@
 
 A Clojure library to handle configuration settings with defaults.
 
+[![Build Status](https://travis-ci.org/gonewest818/defcon.svg?branch=master)](https://travis-ci.org/gonewest818/defcon)
+[![Coverage Status](https://coveralls.io/repos/github/gonewest818/defcon/badge.svg?branch=master)](https://coveralls.io/github/gonewest818/defcon?branch=master)
+
 ## Usage
 
 FIXME
