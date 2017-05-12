@@ -1,8 +1,9 @@
 language: clojure
 jdk:
  - oraclejdk8
-script: lein midje
+script: lein2 midje
 after_success:
-  - lein deploy clojars
+  - lein2 deploy clojars
 after_script:
-  - bash -ex test/coveralls.sh
+  - lein2 cloverage --codecov
+  - bash <(curl -s https://codecov.io/bash) -f target/coverage/codecov.json
