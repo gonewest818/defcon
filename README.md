@@ -3,7 +3,9 @@
 A Clojure library to handle configuration settings with defaults.
 
 [![Build Status](https://travis-ci.org/gonewest818/defcon.svg?branch=master)](https://travis-ci.org/gonewest818/defcon)
-[![Coverage Status](https://coveralls.io/repos/github/gonewest818/defcon/badge.svg?branch=master)](https://coveralls.io/github/gonewest818/defcon?branch=master)
+
+[![Coverage Status](https://codecov.io/gh/gonewest818/defcon/branch/master/graph/badge.svg)](https://codecov.io/gh/gonewest818/defcon)
+
 [![Clojars Project](https://img.shields.io/clojars/v/org.clojars.gonewest818/defcon.svg)](https://clojars.org/org.clojars.gonewest818/defcon)
 
 ## Usage

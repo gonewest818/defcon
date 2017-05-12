@@ -1,4 +1,4 @@
-(defproject org.clojars.gonewest818/defcon "0.5.0-SNAPSHOT"
+(defproject org.clojars.gonewest818/defcon "0.5.0"
   :description "Handle configuration settings with defaults"
   :url "http://github.com/gonewest818/defcon"
   :license {:name "Eclipse Public License"
