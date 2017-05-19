@@ -1,9 +1,14 @@
 language: clojure
 jdk:
- - oraclejdk8
-script: lein2 midje
+- oraclejdk8
+before_script:
+- openssl aes-256-cbc -K $encrypted_5bc06a7c8625_key -iv $encrypted_5bc06a7c8625_iv
+  -in publish-key.asc.enc -out /tmp/publish-key.asc -d
+- gpg --import /tmp/publish-key.asc
+script:
+- lein midje
+- lein cloverage --codecov
 after_success:
-  - lein2 deploy clojars
-after_script:
-  - lein2 cloverage --codecov
-  - bash <(curl -s https://codecov.io/bash) -f target/coverage/codecov.json
+- bash <(curl -s https://codecov.io/bash) -f target/coverage/codecov.json
+- lein deploy clojars
+
