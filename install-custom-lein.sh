@@ -5,8 +5,8 @@
 # (https://github.com/technomancy/leiningen/pull/2279)
 
 
-mkdir -p /opt
-cd /opt
+mkdir -p _tools
+cd _tools
 git clone https://github.com/gonewest818/leiningen.git
 cd leiningen
 git checkout unattended-signatures
