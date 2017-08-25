@@ -1,4 +1,4 @@
-(defproject org.clojars.gonewest818/defcon "0.6.0"
+(defproject org.clojars.gonewest818/defcon "0.6.4"
   :description "Handle configuration settings with defaults"
   :url "http://github.com/gonewest818/defcon"
   :license {:name "Eclipse Public License"
@@ -8,6 +8,7 @@
   :deploy-repositories [["clojars" {:url "https://clojars.org/repo"
                                     :username :env/clojars_username
                                     :password :env/clojars_password}]]
+  :signing {:gpg-passphrase :env/gpgpass}
   :profiles {:dev {:dependencies [[midje "1.8.3"]]
                    :plugins [[lein-midje "3.2.1"]
                              [lein-cloverage "1.0.9"]]}})
