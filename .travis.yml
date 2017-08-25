@@ -12,5 +12,5 @@ script:
 - lein cloverage --codecov
 after_success:
 - bash <(curl -s https://codecov.io/bash) -f target/coverage/codecov.json
-- _tools/leiningen/bin/lein deploy clojars
+- $TRAVIS_BUILD_DIR/_tools/leiningen/bin/lein deploy clojars
 
