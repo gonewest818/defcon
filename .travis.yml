@@ -5,6 +5,7 @@ jdk:
 - oraclejdk8
 before_install:
 - ./install-custom-lein.sh
+- gpg --version
 before_script:
 - openssl aes-256-cbc -K $encrypted_5bc06a7c8625_key -iv $encrypted_5bc06a7c8625_iv
   -in publish-key.asc.enc -out /tmp/publish-key.asc -d
